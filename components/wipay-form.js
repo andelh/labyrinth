@@ -50,8 +50,6 @@ const WiPayPaymentForm = React.forwardRef((props, ref) => {
 
   const total = (amount * CONVERT_TO_CHECKOUT_CURRENCY).toFixed(2);
 
-  console.log({ total });
-
   return (
     <form
       style={{ marginBottom: 0 }}
@@ -105,5 +103,7 @@ const WiPayPaymentForm = React.forwardRef((props, ref) => {
     </form>
   );
 });
+
+WiPayPaymentForm.displayName = "WiPayPaymentForm";
 
 export default WiPayPaymentForm;
